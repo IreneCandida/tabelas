@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando Colgrup para configurar colunas </title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 400px;
+            border-collapse: collapse;
+        }
+        th,td{
+            border: 1px solid black;
+            padding: 10px;
+
+        }
+
+        col.cnome{
+            background-color: aqua;
+        }
+        col.cgrupo{
+            background-color: brown;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Cadastro</caption>
+        <!--  Criando um grupo de colunas para estilizar a coluna desejada-->
+        <colgroup>
+            <col  class="cnome" >
+            <!--<col class="csexo">
+            <col class="cidade">-->
+            <col class="cgrupo" span="2"> <!-- configura duas colunas usando o span-->
+            <col class="cprof">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Sexo</th>
+                <th>Idade</th>
+                <th>Profissão</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Maria</td>
+                <td>F</td>
+                <td>25</td>
+                <td>Medica</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>F</td>
+                <td>25</td>
+                <td>Medica</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>F</td>
+                <td>25</td>
+                <td>Medica</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>F</td>
+                <td>25</td>
+                <td>Medica</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>F</td>
+                <td>25</td>
+                <td>Medica</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>F</td>
+                <td>25</td>
+                <td>Medica</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>
